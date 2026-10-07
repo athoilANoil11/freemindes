@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1a18">
+<title>Free Mind Team | تنفيذ قرار مجلس الأمن 1325 في العراق</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1b1a18;--fg:#efe9dd;--mut:#d6ccb8;--acc:#b0434f;--grn:#6f8f68;--line:rgba(239,233,221,.18);--sand:#cdbb98;--top:env(safe-area-inset-top,0px);--bot:env(safe-area-inset-bottom,0px);box-sizing:border-box;padding-top:0}
+body.lt{--bg:#ece5d6;--fg:#1d1b18;--mut:#403a2e;--acc:#8c2a35;--grn:#3f5f3b;--line:rgba(29,27,24,.2)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%;margin:0;overflow:hidden}html{font-size:112.5%}
+body{background:var(--bg);color:var(--fg);font-family:"IBM Plex Sans Arabic","Noto Kufi Arabic",Tahoma,system-ui,sans-serif;line-height:1.85;transition:background .6s,color .6s;-webkit-tap-highlight-color:transparent}
+button,a{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+p{margin:0}
+/* chrome */
+.bar{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:calc(var(--top) + 10px) 18px 10px;font-size:.9rem;color:var(--fg);background:linear-gradient(to bottom,var(--bg) 60%,transparent)}
+.brand{font-weight:700;letter-spacing:.14em;direction:ltr}
+.menu-btn{display:flex;gap:8px;align-items:center;min-height:44px;padding:0 6px}
+.menu-btn i{display:block;width:20px;height:2px;background:currentColor;box-shadow:0 6px 0 currentColor,0 -6px 0 currentColor}
+.prog{position:fixed;top:0;inset-inline:0;height:3px;z-index:25;background:transparent}
+.prog b{display:block;height:100%;width:0;background:var(--acc);transition:width .6s}
+.nav{position:fixed;inset:auto 0 0 0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:10px 14px calc(var(--bot) + 10px);background:linear-gradient(to top,var(--bg) 55%,transparent)}
+.nav button{min-width:48px;min-height:50px;padding:0 20px;border:1px solid var(--mut);border-radius:3px;font-size:1rem;font-weight:500;background:var(--bg);transition:background .2s,border-color .2s}
+.nav button:hover{border-color:var(--fg)}
+.nav button[disabled]{opacity:.3;pointer-events:none}
+.count{font-size:.95rem;color:var(--mut);direction:ltr;font-variant-numeric:tabular-nums}
+.top{position:fixed;z-index:20;inset-inline-start:14px;bottom:calc(var(--bot) + 76px);width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .3s}
+.top.show{opacity:1;pointer-events:auto}
+body.hero .bar,body.hero .nav,body.hero .top{display:none}
+/* menu */
+.menu{position:fixed;inset:0;z-index:40;background:var(--bg);padding:calc(var(--top) + 18px) 24px 24px;overflow:auto;visibility:hidden;opacity:0;transition:opacity .3s,visibility .3s}
+.menu.open{visibility:visible;opacity:1}
+.menu ol{list-style:none;margin:2rem 0 0;padding:0;max-width:560px}
+.menu li button{display:flex;gap:18px;width:100%;text-align:start;padding:13px 0;border-bottom:1px solid var(--line);font-size:1.1rem;align-items:baseline}
+.menu li button span{color:var(--acc);font-size:.85rem;min-width:2ch;direction:ltr}
+.menu li button[aria-current=true]{color:var(--sand)}
+.close{min-height:44px;color:var(--mut)}
+/* slides */
+.slide{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;padding:calc(var(--top) + 70px) 22px calc(var(--bot) + 110px);visibility:hidden;opacity:0;transform:translateX(-22px);transition:opacity .6s,transform .6s,visibility .6s;overscroll-behavior:contain}
+.slide.back{transform:translateX(22px)}
+.slide.on{visibility:visible;opacity:1;transform:none}
+.wrap{max-width:980px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;justify-content:center;gap:2rem}
+.tag{display:flex;gap:12px;align-items:center;color:var(--acc);font-size:.95rem;font-weight:500}
+.tag::after{content:"";height:1px;width:56px;background:var(--acc)}
+.tag span{direction:ltr}
+h1,h2,h3{margin:0;line-height:1.35;font-weight:700}
+h2{font-size:clamp(1.8rem,6.4vw,3.4rem)}
+h3{font-size:1.25rem}
+.lead{font-size:clamp(1.3rem,4.2vw,1.8rem);line-height:1.8;font-weight:500}
+.mut{color:var(--mut);font-size:1.05rem}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s}
+.slide.on .rv{opacity:1;transform:none}
+/* hero */
+#s0{padding:0}
+#s0 .wrap{position:relative;z-index:2;padding:calc(var(--top) + 40px) 24px calc(var(--bot) + 40px);max-width:860px;gap:1.4rem;justify-content:flex-end}
+.fm{direction:ltr;text-align:right;font-weight:700;letter-spacing:.3em;font-size:.9rem;color:var(--sand)}
+#s0 h1{font-size:clamp(2.1rem,8.6vw,4.6rem);font-weight:700;line-height:1.3}
+#s0 .sub{font-size:clamp(1.2rem,4.4vw,1.8rem);font-weight:400;color:var(--fg)}
+.meta{font-size:.9rem;color:var(--mut);border-top:1px solid var(--line);padding-top:12px;width:max-content;max-width:100%}
+.go{align-self:flex-start;min-height:54px;padding:0 34px;background:var(--acc);color:#fff;font-weight:500;font-size:1.1rem;border-radius:3px;transition:filter .2s}
+.go:hover{filter:brightness(1.15)}
+.bgart{position:absolute;inset:0;z-index:1;pointer-events:none}
+.bgart svg{width:100%;height:100%}
+.sky{fill:#2a2724}
+.sky2{fill:#34302b}
+.net line{stroke:var(--sand);stroke-opacity:.25;stroke-width:1}
+.net circle{fill:var(--sand);animation:pulse 4s ease-in-out infinite}
+.net circle:nth-child(2n){animation-delay:1.3s}.net circle:nth-child(3n){animation-delay:2.4s}
+@keyframes pulse{50%{opacity:.25}}
+.moon{fill:var(--acc);opacity:.85}
+/* s1 chain */
+.chain{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.chain li{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.45rem;font-weight:500}
+.chain li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--grn);flex:none}
+.chain li:last-child{border:0;color:var(--sand)}
+.chain li:last-child::before{background:var(--sand)}
+.fall{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;border:1px solid var(--line)}
+.fall div{padding:18px 14px;font-size:1.1rem;border-inline-end:1px solid var(--line);font-weight:500;position:relative;overflow:hidden}
+.fall div::after{content:"";position:absolute;inset-inline:0;bottom:0;height:3px;background:var(--acc);transform:scaleX(0);transform-origin:right;transition:transform 1.4s}
+.slide.on .fall div::after{transform:scaleX(1)}
+.fall div:nth-child(2)::after{transition-delay:.3s}.fall div:nth-child(3)::after{transition-delay:.6s}.fall div:nth-child(4)::after{transition-delay:.9s}.fall div:nth-child(5)::after{transition-delay:1.2s}
+/* s2 */
+.date{direction:ltr;text-align:right;font-size:clamp(2.2rem,10vw,5.5rem);font-weight:300;line-height:1.1;letter-spacing:.02em}
+.date small{display:block;font-size:.95rem;letter-spacing:.08em;color:var(--mut);margin-top:10px;font-weight:400}
+.why{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.why li{font-size:1.1rem;padding-inline-start:18px;border-inline-start:2px solid var(--acc)}
+.pr{display:grid;gap:0}
+.pr article{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;padding:20px 0;border-top:1px solid var(--line)}
+.pr .n{grid-row:span 2;font-size:2.4rem;font-weight:300;color:var(--acc);direction:ltr;line-height:1}
+.pr p{color:var(--fg);font-size:1.1rem}
+/* s3 */
+.iq{display:grid;gap:2rem;align-items:center}
+.iq svg{width:min(260px,62vw);justify-self:center;overflow:visible}
+.iq path.o{fill:rgba(63,95,59,.12);stroke:var(--grn);stroke-width:2;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 3s}
+.slide.on .iq path.o{stroke-dashoffset:0}
+.iq .rv{transition-delay:.6s}
+.hl{border-inline-start:3px solid var(--acc);padding:6px 18px;font-weight:500;font-size:1.2rem}
+.quote{font-size:clamp(1.7rem,6.6vw,3.2rem);font-weight:700;line-height:1.5}
+/* s4 timeline */
+.tl{display:grid;gap:0;margin:0;padding:0;list-style:none;position:relative}
+.tl li{position:relative;padding:0 26px 34px 0;border-inline-start:0}
+.tl li{padding-inline-start:30px;padding-inline-end:0;border-inline-start:2px solid var(--line)}
+.tl li::before{content:"";position:absolute;inset-inline-start:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.tl li:nth-child(2)::before{background:var(--sand)}
+.tl li:nth-child(3)::before{background:var(--grn);box-shadow:0 0 0 6px rgba(111,143,104,.25)}
+.yr{direction:ltr;text-align:right;font-size:1.9rem;font-weight:300;line-height:1.2}
+.tl h3{margin:4px 0 10px}
+.tl ul{margin:0;padding:0;list-style:none;display:grid;gap:9px;color:var(--fg);font-size:1.05rem;line-height:1.75}
+.tl ul li{padding:0 14px 0 0;border:0;position:relative;padding-inline-start:14px}
+.tl ul li::before{inset-inline-start:0;top:.7em;width:5px;height:5px;box-shadow:none;background:var(--line)!important}
+.tl li:last-child{border-color:var(--grn)}
+.jr{display:flex;gap:14px;flex-wrap:wrap;font-size:1.15rem;font-weight:500}
+.jr span:not(:last-child)::after{content:"\2190";margin-inline-start:14px;color:var(--acc)}
+@media(min-width:900px){
+.tl{grid-template-columns:repeat(3,1fr);gap:28px}
+.tl li,.tl li:last-child{border:0;border-top:2px solid var(--line);padding:26px 0 0}
+.tl li:last-child{border-color:var(--grn)}
+.tl li::before{inset-inline-start:0;top:-7px}
+.tl ul li{padding-inline-start:14px}
+}
+/* s5 */
+.st{display:grid;gap:0}
+.st article{padding:24px 0;border-top:1px solid var(--line);display:grid;gap:8px}
+.big{font-size:clamp(3rem,13vw,6rem);font-weight:300;line-height:1;direction:ltr;text-align:right;color:var(--acc)}
+.big small{font-size:.35em;color:var(--mut);margin-inline-start:8px}
+.st p{color:var(--fg)}
+.st p b{color:var(--fg)}
+.note{border:1px solid var(--line);padding:14px 18px;font-size:.98rem}
+.note b{display:block;color:var(--fg);margin-bottom:4px}
+@media(min-width:900px){.st{grid-template-columns:repeat(3,1fr);gap:32px}.st article{padding-top:24px}}
+/* s6 */
+.road{margin:0;padding:0;list-style:none;display:grid;gap:14px;position:relative}
+.road li{display:flex;gap:18px;align-items:center;padding:18px 20px;background:#26231f;border-inline-start:4px solid var(--acc);font-size:1.2rem;font-weight:500}
+.road li:nth-child(2){margin-inline-start:6vw}.road li:nth-child(3){margin-inline-start:12vw}.road li:nth-child(4){margin-inline-start:18vw}
+.road .n{color:var(--acc);direction:ltr;font-weight:300;font-size:1.5rem}
+.turn{align-self:flex-start;min-height:52px;padding:0 26px;border:1px solid var(--sand);color:var(--sand);font-size:1.05rem;border-radius:3px;transition:background .2s,color .2s}
+.turn:hover{background:var(--sand);color:#1b1a18}
+/* s7 */
+.pil{display:grid;gap:0}
+.pil article{padding:18px 0;border-top:1px solid var(--line)}
+.pil h3{color:var(--sand);margin-bottom:6px}
+.pil p{color:var(--fg);font-size:1.05rem}
+.flow{display:grid;gap:8px;text-align:center;padding:20px 12px;border:1px solid var(--line)}
+.flow .a{font-size:1.15rem}
+.flow .ar{color:var(--acc);font-size:1.4rem;line-height:1}
+.flow .z{font-size:1.5rem;font-weight:700;color:var(--sand)}
+@media(min-width:900px){.pil{grid-template-columns:repeat(4,1fr);gap:28px}}
+/* final */
+.fin .l{font-size:clamp(1.9rem,8vw,4.4rem);font-weight:700;line-height:1.4}
+.fin .s{font-size:clamp(1.4rem,5vw,2.6rem);font-weight:300;color:var(--mut)}
+.fin .four{font-size:clamp(1.15rem,4vw,1.8rem);display:grid;gap:2px}
+.fin .ft{direction:ltr;text-align:right;letter-spacing:.3em;font-weight:700;color:var(--sand)}
+.fin .th{font-size:1.5rem;color:var(--acc);font-weight:500}
+.fin .l .ln{display:block;height:2px;width:0;background:var(--acc);margin-top:14px;transition:width 3s 1.6s}
+.slide.on .ln{width:90px}
+/* sources */
+.src{margin:0;padding:0;list-style:none;display:grid;gap:0;counter-reset:s}
+.src li{font-size:1.05rem;padding:18px 0;border-top:1px solid var(--line);display:flex;gap:16px;counter-increment:s}
+.src li::before{content:counter(s);color:var(--acc);font-size:1.3rem;font-weight:300;min-width:1.2ch;direction:ltr}
+.src a{text-decoration:underline;text-decoration-color:var(--acc);text-underline-offset:6px;display:inline-block;min-height:28px}
+.src small{display:block;color:var(--mut);direction:ltr;text-align:right;font-size:.8rem;margin-top:2px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}.slide{transform:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="hero">
+<div class="prog" aria-hidden="true"><b id="pb"></b></div>
+<header class="bar"><span class="brand">FREE MIND TEAM</span><button class="menu-btn" id="mo" aria-expanded="false" aria-controls="menu"><i></i><span>الأقسام</span></button></header>
+<nav class="menu" id="menu" aria-label="الأقسام"><button class="close" id="mc">إغلاق</button><ol id="ml"></ol></nav>
+ 
+<main id="deck">
+<!-- 00 -->
+<section class="slide" id="s0" data-t="d" data-label="البداية" aria-label="البداية">
+ <div class="bgart" aria-hidden="true"><svg viewBox="0 0 400 700" preserveAspectRatio="xMidYMax slice">
+  <circle class="moon" cx="310" cy="130" r="22"/>
+  <g class="net"><line x1="60" y1="190" x2="150" y2="250"/><line x1="150" y1="250" x2="240" y2="200"/><line x1="240" y1="200" x2="310" y2="130"/><line x1="150" y1="250" x2="200" y2="340"/><line x1="240" y1="200" x2="330" y2="300"/><line x1="200" y1="340" x2="330" y2="300"/><line x1="60" y1="190" x2="90" y2="320"/><line x1="90" y1="320" x2="200" y2="340"/>
+   <circle cx="60" cy="190" r="3"/><circle cx="150" cy="250" r="3.5"/><circle cx="240" cy="200" r="3"/><circle cx="310" cy="130" r="2.5"/><circle cx="200" cy="340" r="3"/><circle cx="330" cy="300" r="3"/><circle cx="90" cy="320" r="2.5"/></g>
+  <g class="sky2"><rect x="0" y="560" width="28" height="140"/><rect x="34" y="520" width="22" height="180"/><rect x="62" y="575" width="34" height="125"/><path d="M110 700V560a24 24 0 0 1 48 0V700z"/><rect x="132" y="500" width="4" height="60"/><rect x="170" y="540" width="30" height="160"/><rect x="206" y="590" width="40" height="110"/><rect x="252" y="515" width="24" height="185"/><rect x="282" y="570" width="36" height="130"/><rect x="324" y="535" width="26" height="165"/><rect x="356" y="580" width="44" height="120"/></g>
+  <g class="sky"><rect x="0" y="620" width="60" height="80"/><rect x="66" y="600" width="38" height="100"/><path d="M230 700V610a30 30 0 0 1 60 0V700z"/><rect x="258" y="540" width="4" height="70"/><rect x="300" y="625" width="50" height="75"/><rect x="352" y="605" width="48" height="95"/><rect x="110" y="640" width="90" height="60"/></g>
+ </svg></div>
+ <div class="wrap">
+  <div class="fm rv">FREE MIND TEAM</div>
+  <h1 class="rv">تنفيذ قرار مجلس الأمن 1325 في العراق</h1>
+  <p class="sub rv">وأثره في تعزيز السلام والتنمية المجتمعية</p>
+  <p class="meta rv" dir="auto">Prepared by: سيف عماد المحمدي</p>
+  <button class="go rv" id="start">ابدأ الرحلة</button>
+ </div>
+</section>
+ 
+<!-- 01 -->
+<section class="slide" id="s1" data-t="d" data-label="لماذا السلام؟">
+ <div class="wrap">
+  <div class="tag rv"><span>01</span>لماذا السلام؟</div>
+  <p class="lead rv">الاستقرار، والنمو المجتمعي، والتنمية الاقتصادية والثقافية، أمور لا يمكن أن تتحقق دون وجود السلام.</p>
+  <ul class="chain"><li class="rv">السلام</li><li class="rv">الاستقرار</li><li class="rv">التنمية</li><li class="rv">المستقبل</li></ul>
+  <p class="rv">فالسلام يسهم في حل النزاعات والحد منها، ويساعد على بناء الحضارات وضمان استمرارها؛ لأن النزاعات تؤثر بشكل مباشر على أفراد المجتمع وتمنع تطورهم.</p>
+  <div><p class="mut rv" style="margin-bottom:10px">النزاع يعطّل:</p>
+  <div class="fall rv"><div>الأمن</div><div>التعليم</div><div>الصحة</div><div>الاقتصاد</div><div>المجتمع</div></div></div>
+  <p class="mut rv">ومن هنا تتجه الأنظار إلى الأمم المتحدة.</p>
+ </div>
+</section>
+ 
+<!-- 02 -->
+<section class="slide" id="s2" data-t="d" data-label="القرار 1325">
+ <div class="wrap">
+  <div class="tag rv"><span>02</span>قرار 1325</div>
+  <div class="date rv">31 OCTOBER 2000<small>United Nations Security Council Resolution 1325</small></div>
+  <div><p class="mut rv" style="margin-bottom:10px">صدر القرار بسبب:</p>
+  <ul class="why"><li class="rv">تزايد تأثير الحروب على النساء والفتيات</li><li class="rv">محدودية مشاركة النساء في صنع القرار</li><li class="rv">الحاجة إلى حماية النساء أثناء النزاعات المسلحة</li></ul></div>
+  <div class="pr">
+   <article class="rv"><span class="n">01</span><h3>المشاركة</h3><p>الاعتراف بدور المرأة في تحقيق السلام.</p></article>
+   <article class="rv"><span class="n">02</span><h3>الحماية</h3><p>حماية النساء في مناطق النزاع.</p></article>
+   <article class="rv"><span class="n">03</span><h3>الوقاية وبناء السلام</h3><p>زيادة مشاركة النساء في صناعة القرارات وعمليات السلام.</p></article>
+  </div>
+ </div>
+</section>
+ 
+<!-- 03 -->
+<section class="slide" id="s3" data-t="l" data-label="لماذا العراق؟">
+ <div class="wrap">
+  <div class="tag rv"><span>03</span>لماذا العراق؟</div>
+  <div class="iq">
+   <svg viewBox="0 0 200 215" aria-hidden="true"><path class="o" d="M72 28 112 8l40 12 24 26-14 20 24 26-14 20-22 26-8 30-22 20-26 10-20-10-20-25-14-12 5-25-20-26-15-25 30-15z"/><g fill="#8c2a35"><circle cx="112" cy="102" r="4"/></g></svg>
+   <div style="display:grid;gap:1.4rem">
+    <p class="rv">احتاج العراق إلى هذا القرار بشكل خاص، بسبب تأثير الحروب التي أدت إلى انهيار النسيج الاجتماعي المترابط، وتدهور نظام التعليم والرعاية الصحية، إضافة إلى زيادة معاناة النساء أثناء النزاعات مثل النزوح والعنف وفقدان الحماية.</p>
+    <p class="hl rv">العراق كان من أوائل الدول التي وضعت خطة وطنية لتنفيذ القرار.</p>
+   </div>
+  </div>
+  <p class="quote rv">"المجتمع بعد النزاع يحتاج إلى جميع طاقاته."</p>
+ </div>
+</section>
+ 
+<!-- 04 -->
+<section class="slide" id="s4" data-t="d" data-label="من 2014 إلى 2030">
+ <div class="wrap">
+  <div class="tag rv"><span>04</span>من 2014 إلى 2030</div>
+  <h2 class="rv">ثلاث خطط وطنية</h2>
+  <ol class="tl">
+   <li class="rv"><div class="yr">2014 → 2018</div><h3>الخطة الوطنية الأولى</h3><ul>
+    <li>جاءت استجابة لآثار المعارك وتصاعد العنف</li><li>التعامل مع سيطرة التنظيمات الإرهابية على مناطق واسعة</li><li>إشراك النساء في جهود السلام وإعادة الإعمار</li><li>تحسين الخدمات الصحية والنفسية والقانونية للمتضررات</li><li>أول خطة وطنية من نوعها في منطقة الشرق الأوسط وشمال أفريقيا</li></ul></li>
+   <li class="rv"><div class="yr">2019 → 2024</div><h3>الخطة الوطنية الثانية</h3><ul>
+    <li>الانتقال من الاستجابة الطارئة إلى بناء المؤسسات</li><li>تعزيز التنسيق بين الوزارات والمحافظات</li><li>دعم التعافي بعد المعارك ضد تنظيم داعش</li><li>زيادة التعاون مع منظمات المجتمع المدني</li></ul></li>
+   <li class="rv"><div class="yr">2025 → 2030</div><h3>الخطة الوطنية الثالثة</h3><ul>
+    <li>دمج مبادئ القرار في عمل مؤسسات الدولة</li><li>الحماية من العنف الإلكتروني</li><li>دعم التعافي والتنمية</li><li>استخدام التكنولوجيا بشكل آمن</li><li>تمكين النساء رقمياً</li><li>توسيع الشراكة بين الحكومة والمجتمع المدني والمنظمات الدولية</li></ul></li>
+  </ol>
+  <div class="jr rv"><span>استجابة</span><span>مؤسسات</span><span>مستقبل</span></div>
+ </div>
+</section>
+ 
+<!-- 05 -->
+<section class="slide" id="s5" data-t="l" data-label="ماذا تحقق؟">
+ <div class="wrap">
+  <div class="tag rv"><span>05</span>ماذا تحقق؟</div>
+  <div class="st">
+   <article class="rv"><h3>تمثيل النساء</h3><div class="big"><span data-n="25">0</span><small>%</small></div><p>ارتفاع نسبة تمثيل النساء في مجلس النواب إلى نسبة أعلى من المتوقع، متجاوزة نسبة الكوتا الدستورية البالغة <b>25%</b>.</p></article>
+   <article class="rv"><h3>القطاع الأمني</h3><p>زيادة عدد النساء العاملات في القطاع الأمني وشغلهن وظائف إدارية وداعمة، مع استمرار محدودية التمثيل في بعض القيادات الميدانية الحساسة.</p></article>
+   <article class="rv"><h3>دعم الناجيات</h3><div class="big"><span data-n="8">0</span><small>قانون رقم / 2021</small></div><p>الإسهام في تقديم التعويضات المالية للناجيات وفق <b>قانون الناجيات الإيزيديات رقم (8) لسنة 2021</b>.</p></article>
+  </div>
+  <div class="note rv"><b>ما يشمله الدعم</b>رواتب شهرية رسمية + دعم وتعويضات + منح قطع أراضٍ في بعض الحالات</div>
+ </div>
+</section>
+ 
+<!-- 06 -->
+<section class="slide" id="s6" data-t="d" data-label="الطريق ليس سهلاً">
+ <div class="wrap">
+  <div class="tag rv"><span>06</span>الطريق ليس سهلاً</div>
+  <ol class="road">
+   <li class="rv"><span class="n">01</span>ضعف التمويل</li>
+   <li class="rv"><span class="n">02</span>قلة الوعي الاجتماعي</li>
+   <li class="rv"><span class="n">03</span>ضعف التنسيق بين المؤسسات</li>
+   <li class="rv"><span class="n">04</span>آثار الحروب السابقة</li>
+  </ol>
+  <h2 class="rv">من التحديات إلى سؤال واحد: ما الذي يمكننا فعله؟</h2>
+  <button class="turn rv" data-go="7">اكتشف الإجابة</button>
+ </div>
+</section>
+ 
+<!-- 07 -->
+<section class="slide" id="s7" data-t="d" data-label="الرؤية المستقبلية">
+ <div class="wrap">
+  <div class="tag rv"><span>07</span>الرؤية المستقبلية</div>
+  <h2 class="rv">المستقبل يبدأ من المجتمع</h2>
+  <div class="pil">
+   <article class="rv"><h3>المدارس</h3><p>تربية جيل جديد على السلام والتعايش، ونشر ثقافة الحوار، وتعليم الطلبة حل الخلافات بالمنطق بدلاً من العنف.</p></article>
+   <article class="rv"><h3>الشباب</h3><p>إشراك الشباب في حملات التوعية والمبادرات التطوعية وقيادة المجتمع.</p></article>
+   <article class="rv"><h3>الإعلام والتكنولوجيا</h3><p>إنتاج برامج توعوية مفيدة وإنشاء منصات للإبلاغ عن العنف والابتزاز الإلكتروني.</p></article>
+   <article class="rv"><h3>الأسرة</h3><p>تأسيس بيئة منزلية تقوم على تقبل الآخر وبناء منظومة من المبادئ والأخلاق.</p></article>
+  </div>
+  <div class="flow rv"><div class="a">المدرسة + الشباب + الإعلام + الأسرة</div><div class="ar">↓</div><div class="a">ثقافة السلام</div><div class="ar">↓</div><div class="z">مجتمع أقوى</div></div>
+ </div>
+</section>
+ 
+<!-- final -->
+<section class="slide fin" id="s8" data-t="d" data-label="الخاتمة">
+ <div class="wrap">
+  <p class="l rv">السلام لا يبدأ من القوانين فقط.<span class="ln"></span></p>
+  <p class="l rv" style="transition-delay:1.4s">يبدأ من الإنسان.</p>
+  <p class="four rv" style="transition-delay:2.6s"><span>ومن المدرسة.</span><span>ومن الأسرة.</span><span>ومن الشباب.</span><span>ومن المجتمع.</span></p>
+  <p class="ft rv" style="transition-delay:3.6s">FREE MIND TEAM</p>
+  <p class="s rv" style="transition-delay:3.9s">نحو عراق أكثر أمناً وازدهاراً للأجيال القادمة.</p>
+  <p class="th rv" style="transition-delay:4.4s">شكراً لكم</p>
+  <p class="mut rv" style="transition-delay:4.7s;direction:ltr;text-align:right">Think. Understand. Act.</p>
+ </div>
+</section>
+ 
+<!-- sources -->
+<section class="slide" id="s9" data-t="l" data-label="المصادر">
+ <div class="wrap">
+  <div class="tag rv"><span>—</span>المصادر</div>
+  <ol class="src">
+   <li class="rv"><div><a href="https://main.un.org/securitycouncil/" target="_blank" rel="noopener noreferrer">مجلس الأمن التابع للأمم المتحدة — قرار مجلس الأمن رقم 1325 (2000)</a><small>main.un.org/securitycouncil</small></div></li>
+   <li class="rv"><div><a href="https://cabinet.iq" target="_blank" rel="noopener noreferrer">الأمانة العامة لمجلس الوزراء العراقي — الخطة الوطنية الثالثة لتنفيذ قرار 1325 (2025–2030)</a><small>cabinet.iq</small></div></li>
+   <li class="rv"><div><a href="https://www.unwomen.org" target="_blank" rel="noopener noreferrer">هيئة الأمم المتحدة للمرأة (UN Women) — تقارير المرأة والسلام والأمن في العراق</a><small>unwomen.org</small></div></li>
+   <li class="rv"><div><a href="https://www.undp.org/iraq" target="_blank" rel="noopener noreferrer">برنامج الأمم المتحدة الإنمائي (UNDP) في العراق — تقارير دعم السلام والتنمية وتمكين المرأة</a><small>undp.org/iraq</small></div></li>
+  </ol>
+  <p class="mut rv">Free Mind Team: Think. Understand. Act.</p>
+ </div>
+</section>
+</main>
+ 
+<button class="top" id="tp" aria-label="العودة إلى أعلى الصفحة">↑</button>
+<nav class="nav" aria-label="التنقل">
+ <button id="nx" aria-label="التالي">التالي ←</button>
+ <span class="count" id="ct">01 / 09</span>
+ <button id="pv" aria-label="السابق">→ السابق</button>
+</nav>
+ 
+<script>
+(function(){
+var S=[].slice.call(document.querySelectorAll('.slide')),N=S.length,cur=-1,B=document.body;
+var pb=document.getElementById('pb'),ct=document.getElementById('ct'),pv=document.getElementById('pv'),nx=document.getElementById('nx'),tp=document.getElementById('tp'),menu=document.getElementById('menu'),mo=document.getElementById('mo'),ml=document.getElementById('ml');
+var pad=function(n){return n<10?'0'+n:''+n};
+S.forEach(function(s,i){
+ [].slice.call(s.querySelectorAll('.rv')).forEach(function(e,k){if(!e.style.transitionDelay)e.style.transitionDelay=(k*0.14+0.15)+'s'});
+ s.addEventListener('scroll',function(){if(i===cur)tp.classList.toggle('show',s.scrollTop>400)},{passive:true});
+ var li=document.createElement('li'),b=document.createElement('button');
+ b.innerHTML='<span>'+pad(i)+'</span>'+s.dataset.label;b.onclick=function(){go(i);closeMenu()};
+ li.appendChild(b);ml.appendChild(li);
+});
+function count(s){[].slice.call(s.querySelectorAll('[data-n]')).forEach(function(e){
+ var t=+e.dataset.n,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ if(rm){e.textContent=t;return}
+ var st=null;(function f(ts){st=st||ts;var p=Math.min((ts-st)/1600,1);e.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(performance.now());});}
+function go(n,silent){
+ n=Math.max(0,Math.min(N-1,n));if(n===cur)return;
+ var back=n<cur;
+ if(cur>=0)S[cur].classList.remove('on');
+ S.forEach(function(s,i){s.classList.toggle('back',back&&i===n);s.setAttribute('aria-hidden',i===n?'false':'true');s.inert=i!==n});
+ cur=n;var s=S[n];s.scrollTop=0;tp.classList.remove('show');
+ B.classList.toggle('hero',n===0);B.classList.toggle('lt',s.dataset.t==='l');
+ requestAnimationFrame(function(){requestAnimationFrame(function(){s.classList.add('on');count(s)})});
+ pb.style.width=(n/(N-1)*100)+'%';ct.textContent=pad(n+1)+' / '+pad(N);
+ pv.disabled=n===0;nx.disabled=n===N-1;
+ [].slice.call(ml.querySelectorAll('button')).forEach(function(b,i){b.setAttribute('aria-current',i===n)});
+ if(!silent)try{history.replaceState(null,'','#'+n)}catch(e){}
+ try{var m=document.querySelector('meta[name=theme-color]');m.content=s.dataset.t==='l'?'#ece5d6':'#1b1a18'}catch(e){}
+}
+function openMenu(){menu.classList.add('open');mo.setAttribute('aria-expanded','true');menu.querySelector('button').focus()}
+function closeMenu(){menu.classList.remove('open');mo.setAttribute('aria-expanded','false');mo.focus()}
+mo.onclick=openMenu;document.getElementById('mc').onclick=closeMenu;
+nx.onclick=function(){go(cur+1)};pv.onclick=function(){go(cur-1)};
+document.getElementById('start').onclick=function(){go(1)};
+tp.onclick=function(){S[cur].scrollTo({top:0,behavior:'smooth'})};
+[].slice.call(document.querySelectorAll('[data-go]')).forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+document.addEventListener('keydown',function(e){
+ if(e.key==='Escape'&&menu.classList.contains('open')){closeMenu();return}
+ if(menu.classList.contains('open')||e.altKey||e.ctrlKey||e.metaKey)return;
+ var k=e.key;
+ if(k==='ArrowLeft'||k==='PageDown'){go(cur+1);e.preventDefault()}
+ else if(k==='ArrowRight'||k==='PageUp'){go(cur-1);e.preventDefault()}
+ else if(k==='Home'){go(0)}else if(k==='End'){go(N-1)}
+ else if(k===' '&&e.target.tagName!=='BUTTON'&&e.target.tagName!=='A'){go(cur+(e.shiftKey?-1:1));e.preventDefault()}
+});
+var x0,y0;
+document.getElementById('deck').addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+document.getElementById('deck').addEventListener('touchend',function(e){
+ var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+ if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.6){go(dx>0?cur+1:cur-1)}
+},{passive:true});
+var h=parseInt((location.hash||'').slice(1),10);
+go(isNaN(h)?0:h,true);
+})();
+</script>
+</body>
+</html>
+ 
